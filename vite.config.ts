@@ -1,16 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/ci-cd-lr-project/',
-  build: {
-    rollupOptions: {
-      output: {
-        dir: 'dist',
-        entryFileNames: 'ci-cd-lr-project.js'
-      }
-    }
-  },
   plugins: [react()],
+  base: '/ci-cd-react-lab/', 
 })
